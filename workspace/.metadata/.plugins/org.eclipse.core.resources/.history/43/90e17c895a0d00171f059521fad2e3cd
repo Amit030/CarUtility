@@ -1,0 +1,12 @@
+
+public interface Constants {
+	static int marutiResaleValue=(60/100);
+	static int hyundaiResaleValue=(40/100);
+	static int toyotaResaleValue=(80/100);
+	int NEW_CUSTOMER=1;
+	int ADD_NEW_CAR=2;
+	int LIST_ALL_CUSTOMER_WITH_CARS=3;
+	int LIST_ALL_CUSTOMER_WITH_ID=5;
+	int  GENERATE_PRIZE=5;
+
+}

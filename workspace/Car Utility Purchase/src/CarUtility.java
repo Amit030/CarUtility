@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CarUtility{
+	public static void main(String args[]){
+		System.out.println("Please Enter your Login Id");
+		Scanner scanner= new Scanner(System.in);
+		String userId=scanner.next();
+		System.out.println("Password");
+		String userPassword=scanner.next();
+	if(userId.equals("Amit") && userPassword.equals("amit")){
+		Controller controller=new Controller();
+		controller.Responce();
+		}
+	else
+		System.out.println("WRONG INPUT");
+		scanner.close();
+	}
+	
+	
+}

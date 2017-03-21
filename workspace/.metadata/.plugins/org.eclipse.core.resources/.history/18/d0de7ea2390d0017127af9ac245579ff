@@ -1,0 +1,33 @@
+import java.util.*;
+import java.math.*;
+import java.text.*;
+import java.io.*;
+
+
+class Customer{
+	int ID;
+	String Name;
+}
+class Car{
+	int id;
+	String Model;
+	int price;
+}
+class Maruti extends Car{
+	int resalevalue=(60/100)*price;
+	
+}
+class Toyota extends Car{
+	int resalevalue=(80/100)*price;
+}
+class Hyundai extends Car{
+	int resalevalue=(40/100)*price;
+}
+class Controller{
+	
+}
+public class CarUtility{
+	public static void main(String args[]){
+		
+	}
+}

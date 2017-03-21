@@ -1,0 +1,15 @@
+import java.util.*;
+public class AddCar {
+	int carchoice;
+public void addcar(int id){
+	     System.out.println("---CARS---\n Press 1 for Maruti\n Press 2 for Hyundai\n Press 3 for Toyota");
+	     Scanner scanf=new Scanner(System.in);
+	     int carchoice=scanf.nextInt();
+	     System.out.println("Enter price");
+	     int price = scanf.nextInt();
+	     System.out.println("Enter Model");
+	     int model=scanf.nextInt();
+	     
+
+}
+}

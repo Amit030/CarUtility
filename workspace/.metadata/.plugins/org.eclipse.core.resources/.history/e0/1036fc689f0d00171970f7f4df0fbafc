@@ -1,0 +1,6 @@
+
+public class AddCar {
+public void addcar(int id){
+	System.out.println("enter you name");
+}
+}

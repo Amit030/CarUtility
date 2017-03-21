@@ -1,0 +1,96 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Controller implements Constants{
+	
+	void showMenu(){
+		System.out.println("-----ADMIN PANEL----- \n Press 1 TO Add New Customer"
+				+ "\n Press 2 To Add new Car to an existing Customer \n Press 3 To List all Customers with their cars "
+				+ "\n Press 4 to List individual Customer based on ID \n Press 5 Generate prizes for customer");
+	}
+	
+	
+	void Responce(){
+	
+		ArrayList<Customer>customerslist=new ArrayList<Customer>();
+		 int choice;
+         int id=1;	
+         char YorN;
+		Scanner scanf=new Scanner(System.in);
+	
+		do{
+			showMenu();
+			choice=scanf.nextInt();
+			switch(choice){
+			
+			case NEW_CUSTOMER :
+				String Name=scanf.next();
+				String carModel=scanf.next();
+		        Customer customer=new Customer(id,Name,carModel);
+		        customerslist.add(customer);
+		        id++;
+		        System.out.println("Added");
+		        
+		        break;
+			case ADD_NEW_CAR :
+				AddCar addcar=new AddCar();
+				System.out.println("Enter Your Id");
+				int getID=scanf.nextInt();
+				for(int i=0;i<customerslist.size();i++){
+					Customer temp=customerslist.get(i);
+					if(getID==temp.getID()){
+					System.out.println("Id matched");
+					addcar.addcar(getID);
+						break;
+						}
+				
+					else
+						System.out.println("wrong Id");
+					
+			     break;
+				}
+			     			     
+			case LIST_ALL_CUSTOMER_WITH_CARS :
+				break;
+				
+				
+				
+			case  LIST_ALL_CUSTOMER_WITH_ID :
+				for(int i=0;i<customerslist.size();i++){
+					Customer temp=customerslist.get(i);
+					System.out.println(temp.getID() +" " +temp.getName()+ " "+temp.getCar());
+				}
+				break;
+			case GENERATE_PRIZE :
+				break;
+			default:
+				System.exit(0);
+			
+		
+			}System.out.println("Do you want to continue Y or N");
+			YorN=scanf.next().charAt(0);
+			
+		}while(YorN=='y' || YorN=='Y');
+		scanf.close();
+			
+		}
+	/*boolean checkId(int id){
+		for(int i=0;i<customerslist.size();i++){
+			if(id==customerslist.getID(i))
+			{ 
+				return true;
+			}
+			else{
+				System.out.println("wrong Id");
+			}
+			
+			
+		}
+		return false;
+//	}*/
+
+}
+
+
+
+

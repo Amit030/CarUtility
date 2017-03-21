@@ -1,0 +1,21 @@
+import java.util.*;
+import java.math.*;
+import java.text.*;
+import java.io.*;
+
+
+class Customer{
+	int ID;
+	String Name;
+}
+class Maruti{
+	
+}
+class Toyota{
+
+}
+class hyundai{
+}
+class controller{
+	
+}

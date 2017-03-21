@@ -1,0 +1,17 @@
+
+public interface Constants {
+	//-----------ALREDAY PUBLIC SO NO NEED TO MENTION---------------
+	//----------INTERFACE SO NO NEED TO WRITE STATIC---------
+	static int marutiResaleValue=(60/100);
+	static int hyundaiResaleValue=(40/100);
+	public static int toyotaResaleValue=(80/100);//----------can be like this --------
+	int NEW_CUSTOMER=1;
+	int ADD_NEW_CAR=2;
+	int LIST_ALL_CUSTOMER_WITH_CARS=3;
+	int LIST_ALL_CUSTOMER_WITH_ID=4;
+	int GENERATE_PRIZE=5;
+    int MARUTI=1;
+    int HYUNDAI=2;
+    int TOYOTA=3;
+    int EXIT=0;
+}

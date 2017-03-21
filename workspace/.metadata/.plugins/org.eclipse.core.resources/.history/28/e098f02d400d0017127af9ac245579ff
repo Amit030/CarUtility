@@ -1,0 +1,6 @@
+
+public abstract class Car extends CarUtility{
+	int id;
+	String Model;
+	int price;
+}

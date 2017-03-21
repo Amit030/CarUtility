@@ -1,0 +1,10 @@
+
+public class Maruti extends Car{
+	Maruti (int Id,String Model,int Price){
+		this.id=Id;
+		this.Model=Model;
+		this.price=price;
+	    this.reSaleValue=0.4*price;
+	} 
+
+}

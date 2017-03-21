@@ -1,0 +1,33 @@
+
+public abstract class Car{
+	int id;
+	String Model;
+	int price;
+	double  reSaleValue;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getModel() {
+		return Model;
+	}
+	public void setModel(String model) {
+		Model = model;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public double getReSaleValue() {
+		return reSaleValue;
+	}
+	public void setReSaleValue(int reSaleValue) {
+		this.reSaleValue = reSaleValue;
+	}
+	
+	
+}

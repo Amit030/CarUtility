@@ -1,0 +1,68 @@
+import java.util.*;
+import java.math.*;
+import java.text.*;
+import java.io.*;
+
+
+class Customer{
+	int ID;
+	String Name;
+}
+class Car{
+	int id;
+	String Model;
+	int price;
+}
+
+
+class Maruti extends Car{
+	int resalevalue=(60/100)*price;
+	
+}
+
+
+class Toyota extends Car{
+	int resalevalue=(80/100)*price;
+}
+
+
+class Hyundai extends Car{
+	int resalevalue=(40/100)*price;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// main screen
+class Controller{
+	void ShowMenu(){
+		System.out.println("-----ADMIN PANEL----- \n Press 1 TO Add New Customer \n Press 2 TO View All Customer "
+				+ "\n Press 3  To Add new Car to an existing Customer \n Press 4 To List all Customers with their cars "
+				+ "Press 5 to List individual Customer based on ID \n Press 6 Generate prizes for customer");
+	}
+	
+}
+//--------------------------------------------------------------------------------------------------------------------
+interface constansts{
+	static int marutiResaleValue=(60/100);
+	static int hyundaiResaleValue=(40/100);
+	static int toyotaResaleValue=(80/100);
+	int NEW_CUSTOMER=1;
+	int VIEW_ALL_CUSTOMER=2;
+	int ADD_NEW_CAR=3;
+	int LIST_ALL_CUSTOMER_CARS=4;
+	int LIST_ALL_CUSTOMER_ID=5;
+	int  GENERATE_PRIZE=6;
+		
+}
+
+
+
+
+
+public class CarUtility{
+	public static void main(String args[]){
+		
+		 Controller controller=new Controller();
+		 controller.ShowMenu();
+	}
+}
